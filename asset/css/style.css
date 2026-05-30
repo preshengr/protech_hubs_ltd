@@ -122,7 +122,7 @@ body::before {
   align-items: center;
 }
 
-.nav__inner {
+.nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -132,7 +132,7 @@ body::before {
   padding-inline: 24px;
 }
 
-.nav__logo {
+.nav-logo {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -143,7 +143,7 @@ body::before {
   letter-spacing: -0.02em;
 }
 
-.nav__logo-mark {
+.nav-logo-mark {
   width: 36px;
   height: 36px;
   background: linear-gradient(135deg, var(--clr-accent), var(--clr-accent-2));
@@ -157,13 +157,13 @@ body::before {
   flex-shrink: 0;
 }
 
-.nav__links {
+.nav-links {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-.nav__link {
+.nav-link {
   font-family: var(--font-body);
   font-size: 0.875rem;
   font-weight: 400;
@@ -174,7 +174,7 @@ body::before {
   position: relative;
 }
 
-.nav__link::after {
+.nav-link::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -185,17 +185,17 @@ body::before {
   transition: width var(--transition);
 }
 
-.nav__link:hover,
-.nav__link--active {
+.nav-link:hover,
+.nav-link--active {
   color: var(--clr-white);
 }
 
-.nav__link:hover::after,
-.nav__link--active::after {
+.nav-link:hover::after,
+.nav-link--active::after {
   width: 100%;
 }
 
-.nav__cta {
+.nav-cta {
   font-family: var(--font-body);
   font-size: 0.875rem;
   font-weight: 500;
@@ -211,13 +211,13 @@ body::before {
   letter-spacing: 0.02em;
 }
 
-.nav__cta:hover {
+.nav-cta:hover {
   opacity: 0.88;
   transform: translateY(-1px);
 }
 
 /* ── Mobile Hamburger ─────────────────────────────────────── */
-.nav__hamburger {
+.nav-hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
@@ -227,7 +227,7 @@ body::before {
   padding: 4px;
 }
 
-.nav__hamburger-line {
+.nav-hamburger-line {
   width: 24px;
   height: 2px;
   background: var(--clr-text);
@@ -313,7 +313,7 @@ body::before {
   background: var(--clr-surface-2);
 }
 
-.section__label {
+.section-label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -326,7 +326,7 @@ body::before {
   margin-bottom: 16px;
 }
 
-.section__label::before {
+.section-label::before {
   content: "";
   display: block;
   width: 24px;
@@ -334,7 +334,7 @@ body::before {
   background: var(--clr-accent);
 }
 
-.section__title {
+.section-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
@@ -344,26 +344,26 @@ body::before {
   margin-bottom: 16px;
 }
 
-.section__subtitle {
+.section-subtitle {
   font-size: 1.0625rem;
   color: var(--clr-muted);
   max-width: 560px;
   line-height: 1.7;
 }
 
-.section__header {
+.section-header {
   margin-bottom: 60px;
 }
 
-.section__header--center {
+.section-header--center {
   text-align: center;
 }
 
-.section__header--center .section__label {
+.section-header--center .section-label {
   justify-content: center;
 }
 
-.section__header--center .section__subtitle {
+.section-header--center .section-subtitle {
   margin-inline: auto;
 }
 
@@ -380,7 +380,7 @@ body::before {
   overflow: hidden;
 }
 
-.hero__bg-grid {
+.hero-bg-grid {
   position: absolute;
   inset: 0;
   background-image:
@@ -394,7 +394,7 @@ body::before {
   );
 }
 
-.hero__glow {
+.hero-glow {
   position: absolute;
   top: -200px;
   right: -200px;
@@ -408,7 +408,7 @@ body::before {
   pointer-events: none;
 }
 
-.hero__content {
+.hero-content {
   position: relative;
   z-index: 2;
   display: grid;
@@ -421,11 +421,11 @@ body::before {
   width: 100%;
 }
 
-.hero__text {
+.hero-text {
   max-width: 580px;
 }
 
-.hero__eyebrow {
+.hero-eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -441,7 +441,7 @@ body::before {
   background: rgba(0, 200, 255, 0.06);
 }
 
-.hero__title {
+.hero-title {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 5.5vw, 4.5rem);
   font-weight: 800;
@@ -451,14 +451,14 @@ body::before {
   margin-bottom: 24px;
 }
 
-.hero__title-accent {
+.hero-title-accent {
   background: linear-gradient(90deg, var(--clr-accent), var(--clr-accent-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.hero__description {
+.hero-description {
   font-size: 1.125rem;
   color: var(--clr-muted);
   line-height: 1.75;
@@ -466,14 +466,14 @@ body::before {
   max-width: 480px;
 }
 
-.hero__actions {
+.hero-actions {
   display: flex;
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
 }
 
-.hero__stats {
+.hero-stats {
   display: flex;
   gap: 40px;
   margin-top: 56px;
@@ -481,7 +481,7 @@ body::before {
   border-top: 1px solid var(--clr-border);
 }
 
-.hero__stat-value {
+.hero-stat-value {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 800;
@@ -489,7 +489,7 @@ body::before {
   line-height: 1;
 }
 
-.hero__stat-label {
+.hero-stat-label {
   font-size: 0.8125rem;
   color: var(--clr-muted);
   margin-top: 4px;
@@ -497,20 +497,20 @@ body::before {
   letter-spacing: 0.06em;
 }
 
-.hero__visual {
+.hero-visual {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hero__card-stack {
+.hero-card-stack {
   position: relative;
   width: 480px;
   height: 480px;
 }
 
-.hero__card-bg {
+.hero-card-bg {
   position: absolute;
   width: 380px;
   height: 380px;
@@ -522,7 +522,7 @@ body::before {
   transform: translate(-50%, -50%) rotate(-6deg);
 }
 
-.hero__card-main {
+.hero-card-main {
   position: absolute;
   width: 380px;
   height: 380px;
@@ -544,12 +544,12 @@ body::before {
   box-shadow: var(--shadow-glow);
 }
 
-.hero__card-icon {
+.hero-card-icon {
   font-size: 4rem;
   line-height: 1;
 }
 
-.hero__card-label {
+.hero-card-label {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 700;
@@ -557,7 +557,7 @@ body::before {
   text-align: center;
 }
 
-.hero__floating-badge {
+.hero-floating-badge {
   position: absolute;
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
@@ -573,19 +573,19 @@ body::before {
   white-space: nowrap;
 }
 
-.hero__floating-badge--tl {
+.hero-floating-badge--tl {
   top: 30px;
   left: 0;
   animation: floatY 4s ease-in-out infinite;
 }
 
-.hero__floating-badge--br {
+.hero-floating-badge--br {
   bottom: 50px;
   right: 0;
   animation: floatY 4s ease-in-out infinite 2s;
 }
 
-.hero__badge-dot {
+.hero-badge-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -677,7 +677,7 @@ body::before {
   border-color: rgba(0, 200, 255, 0.25);
 }
 
-.card__icon {
+.card-icon {
   width: 52px;
   height: 52px;
   border-radius: var(--radius-sm);
@@ -694,7 +694,7 @@ body::before {
   margin-bottom: 20px;
 }
 
-.card__title {
+.card-title {
   font-family: var(--font-display);
   font-size: 1.1875rem;
   font-weight: 700;
@@ -703,13 +703,13 @@ body::before {
   line-height: 1.3;
 }
 
-.card__text {
+.card-text {
   font-size: 0.9375rem;
   color: var(--clr-muted);
   line-height: 1.7;
 }
 
-.card__tag {
+.card-tag {
   display: inline-block;
   margin-top: 16px;
   font-size: 0.75rem;
@@ -722,7 +722,7 @@ body::before {
   border-radius: 100px;
 }
 
-.card__number {
+.card-number {
   font-family: var(--font-display);
   font-size: 3rem;
   font-weight: 800;
@@ -744,14 +744,14 @@ body::before {
   position: relative;
 }
 
-.footer__grid {
+.footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 48px;
   margin-bottom: 60px;
 }
 
-.footer__brand-logo {
+.footer-brand-logo {
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 800;
@@ -763,7 +763,7 @@ body::before {
   gap: 10px;
 }
 
-.footer__brand-tagline {
+.footer-brand-tagline {
   font-size: 0.9375rem;
   color: var(--clr-muted);
   line-height: 1.7;
@@ -771,12 +771,12 @@ body::before {
   max-width: 300px;
 }
 
-.footer__socials {
+.footer-socials {
   display: flex;
   gap: 12px;
 }
 
-.footer__social-link {
+.footer-social-link {
   width: 38px;
   height: 38px;
   border-radius: var(--radius-sm);
@@ -789,13 +789,13 @@ body::before {
   transition: all var(--transition);
 }
 
-.footer__social-link:hover {
+.footer-social-link:hover {
   border-color: var(--clr-accent);
   color: var(--clr-accent);
   background: rgba(0, 200, 255, 0.06);
 }
 
-.footer__col-title {
+.footer-col-title {
   font-family: var(--font-display);
   font-size: 0.875rem;
   font-weight: 700;
@@ -805,23 +805,23 @@ body::before {
   margin-bottom: 24px;
 }
 
-.footer__links {
+.footer-links {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.footer__link {
+.footer-link {
   font-size: 0.9375rem;
   color: var(--clr-muted);
   transition: color var(--transition);
 }
 
-.footer__link:hover {
+.footer-link:hover {
   color: var(--clr-accent);
 }
 
-.footer__contact-item {
+.footer-contact-item {
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -831,13 +831,13 @@ body::before {
   line-height: 1.5;
 }
 
-.footer__contact-icon {
+.footer-contact-icon {
   font-size: 1rem;
   flex-shrink: 0;
   margin-top: 2px;
 }
 
-.footer__bottom {
+.footer-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -847,7 +847,7 @@ body::before {
   color: var(--clr-muted);
 }
 
-.footer__accent-bar {
+.footer-accent-bar {
   width: 60px;
   height: 3px;
   background: linear-gradient(90deg, var(--clr-accent), var(--clr-accent-2));
@@ -868,7 +868,7 @@ body::before {
   background: var(--clr-surface);
 }
 
-.page-hero__bg {
+.page-hero-bg {
   position: absolute;
   inset: 0;
   background-image:
@@ -877,12 +877,12 @@ body::before {
   background-size: 40px 40px;
 }
 
-.page-hero__content {
+.page-hero-content {
   position: relative;
   z-index: 2;
 }
 
-.page-hero__breadcrumb {
+.page-hero-breadcrumb {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -891,11 +891,11 @@ body::before {
   margin-bottom: 20px;
 }
 
-.page-hero__breadcrumb-sep {
+.page-hero-breadcrumb-sep {
   color: var(--clr-border);
 }
 
-.page-hero__title {
+.page-hero-title {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
@@ -905,7 +905,7 @@ body::before {
   margin-bottom: 20px;
 }
 
-.page-hero__subtitle {
+.page-hero-subtitle {
   font-size: 1.125rem;
   color: var(--clr-muted);
   max-width: 560px;
@@ -947,13 +947,13 @@ body::before {
   transform: scaleX(1);
 }
 
-.service-card__icon {
+.service-card-icon {
   font-size: 2.5rem;
   margin-bottom: 24px;
   display: block;
 }
 
-.service-card__title {
+.service-card-title {
   font-family: var(--font-display);
   font-size: 1.375rem;
   font-weight: 700;
@@ -961,20 +961,20 @@ body::before {
   margin-bottom: 12px;
 }
 
-.service-card__text {
+.service-card-text {
   font-size: 0.9375rem;
   color: var(--clr-muted);
   line-height: 1.75;
   margin-bottom: 24px;
 }
 
-.service-card__features {
+.service-card-features {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.service-card__feature {
+.service-card-feature {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -982,7 +982,7 @@ body::before {
   color: var(--clr-text);
 }
 
-.service-card__feature::before {
+.service-card-feature::before {
   content: "→";
   color: var(--clr-accent);
   font-size: 0.75rem;
@@ -1012,7 +1012,7 @@ body::before {
   height: 500px;
 }
 
-.about-visual__main {
+.about-visual-main {
   width: 100%;
   height: 400px;
   border-radius: var(--radius-lg);
@@ -1028,7 +1028,7 @@ body::before {
   right: 0;
 }
 
-.about-visual__badge {
+.about-visual-badge {
   position: absolute;
   bottom: 0;
   right: -20px;
@@ -1039,13 +1039,13 @@ body::before {
   font-family: var(--font-display);
 }
 
-.about-visual__badge-value {
+.about-visual-badge-value {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1;
 }
 
-.about-visual__badge-label {
+.about-visual-badge-label {
   font-size: 0.8125rem;
   font-weight: 500;
   opacity: 0.8;
@@ -1059,13 +1059,13 @@ body::before {
   margin-top: 32px;
 }
 
-.about-list__item {
+.about-list-item {
   display: flex;
   gap: 16px;
   align-items: flex-start;
 }
 
-.about-list__dot {
+.about-list-dot {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -1080,13 +1080,13 @@ body::before {
   font-weight: 700;
 }
 
-.about-list__text {
+.about-list-text {
   font-size: 0.9375rem;
   color: var(--clr-muted);
   line-height: 1.65;
 }
 
-.about-list__text strong {
+.about-list-text strong {
   color: var(--clr-white);
   font-weight: 500;
 }
@@ -1105,7 +1105,7 @@ body::before {
   border-color: rgba(0, 200, 255, 0.22);
 }
 
-.team-card__avatar {
+.team-card-avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -1120,7 +1120,7 @@ body::before {
   margin: 0 auto 16px;
 }
 
-.team-card__name {
+.team-card-name {
   font-family: var(--font-display);
   font-size: 1.125rem;
   font-weight: 700;
@@ -1128,14 +1128,14 @@ body::before {
   margin-bottom: 4px;
 }
 
-.team-card__role {
+.team-card-role {
   font-size: 0.875rem;
   color: var(--clr-accent);
   font-weight: 500;
   margin-bottom: 12px;
 }
 
-.team-card__bio {
+.team-card-bio {
   font-size: 0.875rem;
   color: var(--clr-muted);
   line-height: 1.65;
@@ -1158,7 +1158,7 @@ body::before {
   border-color: rgba(0, 200, 255, 0.2);
 }
 
-.blog-card__image {
+.blog-card-image {
   width: 100%;
   height: 200px;
   background: linear-gradient(
@@ -1172,18 +1172,18 @@ body::before {
   font-size: 3rem;
 }
 
-.blog-card__body {
+.blog-card-body {
   padding: 28px;
 }
 
-.blog-card__meta {
+.blog-card-meta {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 12px;
 }
 
-.blog-card__category {
+.blog-card-category {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -1194,12 +1194,12 @@ body::before {
   border-radius: 100px;
 }
 
-.blog-card__date {
+.blog-card-date {
   font-size: 0.8125rem;
   color: var(--clr-muted);
 }
 
-.blog-card__title {
+.blog-card-title {
   font-family: var(--font-display);
   font-size: 1.1875rem;
   font-weight: 700;
@@ -1209,18 +1209,18 @@ body::before {
   transition: color var(--transition);
 }
 
-.blog-card:hover .blog-card__title {
+.blog-card:hover .blog-card-title {
   color: var(--clr-accent);
 }
 
-.blog-card__excerpt {
+.blog-card-excerpt {
   font-size: 0.9375rem;
   color: var(--clr-muted);
   line-height: 1.7;
   margin-bottom: 20px;
 }
 
-.blog-card__read-more {
+.blog-card-read-more {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -1230,7 +1230,7 @@ body::before {
   transition: gap var(--transition);
 }
 
-.blog-card:hover .blog-card__read-more {
+.blog-card:hover .blog-card-read-more {
   gap: 10px;
 }
 
@@ -1244,7 +1244,7 @@ body::before {
   align-items: start;
 }
 
-.contact-info__item {
+.contact-info-item {
   display: flex;
   gap: 16px;
   align-items: flex-start;
@@ -1252,11 +1252,11 @@ body::before {
   border-bottom: 1px solid var(--clr-border);
 }
 
-.contact-info__item:first-child {
+.contact-info-item:first-child {
   padding-top: 0;
 }
 
-.contact-info__icon-wrap {
+.contact-info-icon-wrap {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-sm);
@@ -1273,7 +1273,7 @@ body::before {
   flex-shrink: 0;
 }
 
-.contact-info__label {
+.contact-info-label {
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -1282,7 +1282,7 @@ body::before {
   margin-bottom: 4px;
 }
 
-.contact-info__value {
+.contact-info-value {
   font-size: 1rem;
   color: var(--clr-white);
   font-weight: 400;
@@ -1361,7 +1361,7 @@ body::before {
   position: relative;
 }
 
-.testimonial-card__quote {
+.testimonial-card-quote {
   font-size: 3rem;
   color: var(--clr-accent);
   line-height: 1;
@@ -1370,7 +1370,7 @@ body::before {
   opacity: 0.5;
 }
 
-.testimonial-card__text {
+.testimonial-card-text {
   font-size: 0.9375rem;
   color: var(--clr-muted);
   line-height: 1.75;
@@ -1378,13 +1378,13 @@ body::before {
   margin-bottom: 24px;
 }
 
-.testimonial-card__author {
+.testimonial-card-author {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.testimonial-card__avatar {
+.testimonial-card-avatar {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1399,14 +1399,14 @@ body::before {
   flex-shrink: 0;
 }
 
-.testimonial-card__name {
+.testimonial-card-name {
   font-family: var(--font-display);
   font-size: 0.9375rem;
   font-weight: 700;
   color: var(--clr-white);
 }
 
-.testimonial-card__company {
+.testimonial-card-company {
   font-size: 0.8125rem;
   color: var(--clr-muted);
 }
@@ -1440,7 +1440,7 @@ body::before {
   pointer-events: none;
 }
 
-.cta-banner__title {
+.cta-banner-title {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3.5vw, 2.75rem);
   font-weight: 800;
@@ -1449,7 +1449,7 @@ body::before {
   margin-bottom: 16px;
 }
 
-.cta-banner__text {
+.cta-banner-text {
   font-size: 1.0625rem;
   color: var(--clr-muted);
   max-width: 520px;
@@ -1457,7 +1457,7 @@ body::before {
   line-height: 1.7;
 }
 
-.cta-banner__actions {
+.cta-banner-actions {
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -1496,7 +1496,7 @@ body::before {
   z-index: 1;
 }
 
-.process-step__number {
+.process-step-number {
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -1512,7 +1512,7 @@ body::before {
   margin: 0 auto 20px;
 }
 
-.process-step__title {
+.process-step-title {
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
@@ -1520,7 +1520,7 @@ body::before {
   margin-bottom: 8px;
 }
 
-.process-step__text {
+.process-step-text {
   font-size: 0.875rem;
   color: var(--clr-muted);
   line-height: 1.65;
@@ -1540,7 +1540,7 @@ body::before {
   border-bottom: 1px solid var(--clr-border);
 }
 
-.tech-strip__item {
+.tech-strip-item {
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
@@ -1550,7 +1550,7 @@ body::before {
   transition: color var(--transition);
 }
 
-.tech-strip__item:hover {
+.tech-strip-item:hover {
   color: var(--clr-muted);
 }
 
@@ -1563,7 +1563,7 @@ body::before {
   gap: 12px;
 }
 
-.accordion__item {
+.accordion-item {
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
   border-radius: var(--radius-md);
@@ -1571,11 +1571,11 @@ body::before {
   transition: border-color var(--transition);
 }
 
-.accordion__item:hover {
+.accordion-item:hover {
   border-color: rgba(0, 200, 255, 0.2);
 }
 
-.accordion__header {
+.accordion-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1584,14 +1584,14 @@ body::before {
   gap: 16px;
 }
 
-.accordion__question {
+.accordion-question {
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 600;
   color: var(--clr-white);
 }
 
-.accordion__toggle {
+.accordion-toggle {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -1605,7 +1605,7 @@ body::before {
   transition: transform var(--transition);
 }
 
-.accordion__answer {
+.accordion-answer {
   padding: 0 28px 24px;
   font-size: 0.9375rem;
   color: var(--clr-muted);
@@ -1625,13 +1625,13 @@ body::before {
   border: 1px solid var(--clr-border);
 }
 
-.stats-bar__item {
+.stats-bar-item {
   background: var(--clr-surface);
   padding: 40px 32px;
   text-align: center;
 }
 
-.stats-bar__value {
+.stats-bar-value {
   font-family: var(--font-display);
   font-size: 2.5rem;
   font-weight: 800;
@@ -1640,7 +1640,7 @@ body::before {
   margin-bottom: 8px;
 }
 
-.stats-bar__label {
+.stats-bar-label {
   font-size: 0.875rem;
   color: var(--clr-muted);
   text-transform: uppercase;
@@ -1668,7 +1668,7 @@ body::before {
   position: relative;
 }
 
-.pricing-card__badge {
+.pricing-card-badge {
   position: absolute;
   top: -13px;
   left: 50%;
@@ -1684,7 +1684,7 @@ body::before {
   white-space: nowrap;
 }
 
-.pricing-card__plan {
+.pricing-card-plan {
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -1693,7 +1693,7 @@ body::before {
   margin-bottom: 8px;
 }
 
-.pricing-card__price {
+.pricing-card-price {
   font-family: var(--font-display);
   font-size: 3rem;
   font-weight: 800;
@@ -1702,26 +1702,26 @@ body::before {
   margin-bottom: 4px;
 }
 
-.pricing-card__price-note {
+.pricing-card-price-note {
   font-size: 0.875rem;
   color: var(--clr-muted);
   margin-bottom: 28px;
 }
 
-.pricing-card__divider {
+.pricing-card-divider {
   height: 1px;
   background: var(--clr-border);
   margin-bottom: 28px;
 }
 
-.pricing-card__features {
+.pricing-card-features {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 32px;
 }
 
-.pricing-card__feature {
+.pricing-card-feature {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1729,7 +1729,7 @@ body::before {
   color: var(--clr-text);
 }
 
-.pricing-card__feature-check {
+.pricing-card-feature-check {
   color: var(--clr-accent);
   font-size: 0.875rem;
   flex-shrink: 0;
@@ -1754,7 +1754,7 @@ body::before {
   font-size: 0.9375rem;
 }
 
-.map-block__icon {
+.map-block-icon {
   font-size: 3rem;
   opacity: 0.4;
 }
@@ -1826,17 +1826,17 @@ body::before {
    RESPONSIVE — Mobile First adjustments
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero__content {
+  .hero-content {
     grid-template-columns: 1fr;
     gap: 60px;
   }
-  .hero__card-stack {
+  .hero-card-stack {
     width: 100%;
     max-width: 400px;
     height: 400px;
     margin: 0 auto;
   }
-  .footer__grid {
+  .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
@@ -1871,17 +1871,17 @@ body::before {
     --nav-height: 70px;
   }
 
-  .nav__links {
+  .nav-links {
     display: none;
   }
-  .nav__cta {
+  .nav-cta {
     display: none;
   }
-  .nav__hamburger {
+  .nav-hamburger {
     display: flex;
   }
 
-  .hero__stats {
+  .hero-stats {
     flex-direction: column;
     gap: 24px;
   }
@@ -1891,10 +1891,10 @@ body::before {
   .grid--2 {
     grid-template-columns: 1fr;
   }
-  .footer__grid {
+  .footer-grid {
     grid-template-columns: 1fr;
   }
-  .footer__bottom {
+  .footer-bottom {
     flex-direction: column;
     gap: 12px;
     text-align: center;
@@ -1911,23 +1911,23 @@ body::before {
   .stats-bar {
     grid-template-columns: 1fr 1fr;
   }
-  .hero__floating-badge {
+  .hero-floating-badge {
     display: none;
   }
   .about-visual {
     height: 300px;
   }
-  .about-visual__badge {
+  .about-visual-badge {
     right: 0;
   }
-  .pricing-card--popular .pricing-card__badge {
+  .pricing-card--popular .pricing-card-badge {
     white-space: normal;
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .hero__actions {
+  .hero-actions {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -1974,7 +1974,7 @@ body::before {
    9. ✅ WCAG zoom-safe (no user-scalable=no in HTML)
    10.✅ Container-query-ready component classes
 
-   BREAKPOINT SCALE (from Project 2 slide p.9):
+   BREAKPOINT SCALE :
      --bp-xs :   0px      Mobile Core (Base CSS)
      --bp-sm :   480px    Small mobile landscape
      --bp-md :   768px    Tablet (Layout Enhancements)
@@ -1998,11 +1998,11 @@ body::before {
   --space-xl: clamp(2.5rem, 5vw, 5rem); /* 40–80px  */
   --space-2xl: clamp(4rem, 8vw, 7.5rem); /* 64–120px */
 
-  /* ── Fluid section padding (Project 2: fluid, not fixed) ── */
+  /* ── Fluid section padding (fluid, not fixed) ── */
   --section-pad-fluid: clamp(4rem, 8vw, 7.5rem) 0;
 
   /* ── Fluid type scale — clamp(min, ideal-vw, max) ── */
-  /* font-size: clamp(1rem, 2.5vw, 2rem)  ← P2 slide p.13 */
+  /* font-size: clamp(1rem, 2.5vw, 2rem)  ←  */
   --fs-xs: clamp(0.75rem, 1.2vw, 0.875rem); /* 12–14px  */
   --fs-sm: clamp(0.8125rem, 1.4vw, 0.9375rem); /* 13–15px  */
   --fs-base: clamp(0.9375rem, 1.6vw, 1rem); /* 15–16px  */
@@ -2013,7 +2013,7 @@ body::before {
   --fs-3xl: clamp(2rem, 4.5vw, 3rem); /* 32–48px  */
   --fs-hero: clamp(2.25rem, 5.5vw, 4.5rem); /* 36–72px  */
 
-  /* ── Touch target minimum (P2 slide p.15: 44×44px) ── */
+  /* ── Touch target minimum (44×44px) ── */
   --touch-target: 44px;
 
   /* ── Fluid container padding ── */
@@ -2025,7 +2025,7 @@ body::before {
 
 /* ============================================================
    SECTION 2 — MOBILE-FIRST BASE CSS RESETS
-   Project 2 Strategy (slide p.8): Mobile Core = Base CSS.
+   Project 2 Strategy: Mobile Core = Base CSS.
    All default styles target mobile (0px+) first.
    Developer: These override Project 1 where values conflict.
    ============================================================ */
@@ -2033,7 +2033,7 @@ body::before {
 /* ── Body: fluid base font ── */
 body {
   font-size: var(--fs-base);
-  /* Ensure zoom works — NEVER add user-scalable=no (P2 slide p.16) */
+  /* Ensure zoom works — NEVER add user-scalable=no */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
@@ -2060,7 +2060,7 @@ img {
   display: block;
 }
 
-/* Responsive image container — preserves space (P1 slide p.15: CLS) */
+/* Responsive image container — preserves space */
 .img-container {
   width: 100%;
   overflow: hidden;
@@ -2089,68 +2089,68 @@ img {
 
 /* ============================================================
    SECTION 3 — FLUID TYPOGRAPHY OVERRIDES
-   Project 2 slide p.13: font-size: clamp(1rem, 2.5vw, 2rem)
+  font-size: clamp(1rem, 2.5vw, 2rem)
    Developer: These replace the fixed font-size values in P1.
    ============================================================ */
 
-.hero__title {
+.hero-title {
   font-size: var(--fs-hero); /* clamp(2.25rem, 5.5vw, 4.5rem) */
 }
 
-.page-hero__title {
+.page-hero-title {
   font-size: var(--fs-3xl); /* clamp(2rem, 4.5vw, 3rem) */
 }
 
-.section__title {
+.section-title {
   font-size: var(--fs-2xl); /* clamp(1.75rem, 3.5vw, 2.5rem) */
 }
 
-.hero__description {
+.hero-description {
   font-size: var(--fs-md);
 }
 
-.section__subtitle {
+.section-subtitle {
   font-size: var(--fs-base);
 }
 
-.card__title {
+.card-title {
   font-size: var(--fs-lg);
 }
 
-.card__text {
+.card-text {
   font-size: var(--fs-sm);
 }
 
-.service-card__title {
+.service-card-title {
   font-size: var(--fs-xl);
 }
 
-.service-card__text {
+.service-card-text {
   font-size: var(--fs-sm);
 }
 
-.blog-card__title {
+.blog-card-title {
   font-size: var(--fs-lg);
 }
 
-.blog-card__excerpt {
+.blog-card-excerpt {
   font-size: var(--fs-sm);
 }
 
-.cta-banner__title {
+.cta-banner-title {
   font-size: var(--fs-2xl);
 }
 
-.cta-banner__text {
+.cta-banner-text {
   font-size: var(--fs-base);
 }
 
-.footer__brand-tagline {
+.footer-brand-tagline {
   font-size: var(--fs-sm);
 }
 
-.footer__link,
-.footer__contact-item {
+.footer-link,
+.footer-contact-item {
   font-size: var(--fs-sm);
 }
 
@@ -2160,7 +2160,7 @@ img {
 
 /* ============================================================
    SECTION 4 — POPOVER API NAVIGATION
-   Project 2 slide p.14: Hamburger via Popover API — No JS.
+  Hamburger via Popover API — No JS.
    ─────────────────────────────────────────────────────────────
    Developer: The HTML <nav> uses these attributes:
      <button popovertarget="mobile-nav">          ← trigger
@@ -2171,7 +2171,7 @@ img {
    ============================================================ */
 
 /* ── Popover panel (mobile nav drawer) ── */
-.nav__popover {
+.nav-popover {
   /* Reset popover UA styles */
   border: none;
   padding: 0;
@@ -2196,21 +2196,21 @@ img {
 }
 
 /* Popover open state (browser adds :popover-open) */
-.nav__popover:popover-open {
+.nav-popover:popover-open {
   opacity: 1;
   transform: translateX(0);
 }
 
 /* Starting transition for entry animation */
 @starting-style {
-  .nav__popover:popover-open {
+  .nav-popover:popover-open {
     opacity: 0;
     transform: translateX(100%);
   }
 }
 
 /* The drawer panel itself */
-.nav__drawer {
+.nav-drawer {
   position: absolute;
   top: 0;
   right: 0;
@@ -2225,14 +2225,14 @@ img {
 }
 
 /* Backdrop (clicking outside closes it) */
-.nav__popover::backdrop {
+.nav-popover::backdrop {
   background: rgba(4, 13, 26, 0.75);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 
 /* Drawer header */
-.nav__drawer-header {
+.nav-drawer-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2242,7 +2242,7 @@ img {
   flex-shrink: 0;
 }
 
-.nav__drawer-logo {
+.nav-drawer-logo {
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 800;
@@ -2252,8 +2252,8 @@ img {
   gap: 8px;
 }
 
-/* Close button — accessible touch target 44×44px (P2 slide p.15) */
-.nav__drawer-close {
+/* Close button — accessible touch target 44×44px  */
+.nav-drawer-close {
   width: var(--touch-target);
   height: var(--touch-target);
   min-width: var(--touch-target);
@@ -2273,14 +2273,14 @@ img {
   flex-shrink: 0;
 }
 
-.nav__drawer-close:hover {
+.nav-drawer-close:hover {
   background: rgba(0, 200, 255, 0.1);
   border-color: var(--clr-accent);
   color: var(--clr-accent);
 }
 
 /* Drawer nav links */
-.nav__drawer-links {
+.nav-drawer-links {
   display: flex;
   flex-direction: column;
   padding: 24px 0;
@@ -2288,7 +2288,7 @@ img {
   overflow-y: auto;
 }
 
-.nav__drawer-link {
+.nav-drawer-link {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2308,25 +2308,25 @@ img {
   border-left: 2px solid transparent;
 }
 
-.nav__drawer-link:hover,
-.nav__drawer-link--active {
+.nav-drawer-link:hover,
+.nav-drawer-link--active {
   color: var(--clr-white);
   background: rgba(0, 200, 255, 0.05);
   border-left-color: var(--clr-accent);
 }
 
-.nav__drawer-link--active {
+.nav-drawer-link--active {
   color: var(--clr-accent);
 }
 
 /* Drawer footer CTA */
-.nav__drawer-footer {
+.nav-drawer-footer {
   padding: 24px;
   border-top: 1px solid var(--clr-border);
   flex-shrink: 0;
 }
 
-.nav__drawer-cta {
+.nav-drawer-cta {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2343,13 +2343,13 @@ img {
   transition: opacity var(--transition);
 }
 
-.nav__drawer-cta:hover {
+.nav-drawer-cta:hover {
   opacity: 0.88;
 }
 
 /* ── Hamburger trigger button ── */
-/* Touch target: min 44×44px (P2 slide p.15) */
-.nav__hamburger {
+/* Touch target: min 44×44px */
+.nav-hamburger {
   width: var(--touch-target);
   height: var(--touch-target);
   min-width: var(--touch-target);
@@ -2369,12 +2369,12 @@ img {
     border-color var(--transition);
 }
 
-.nav__hamburger:hover {
+.nav-hamburger:hover {
   background: rgba(0, 200, 255, 0.08);
   border-color: rgba(0, 200, 255, 0.3);
 }
 
-.nav__hamburger-line {
+.nav-hamburger-line {
   width: 20px;
   height: 2px;
   background: var(--clr-text);
@@ -2385,8 +2385,8 @@ img {
 
 /* ============================================================
    SECTION 5 — RESPONSIVE GRID SYSTEM ENHANCEMENTS
-   Project 2 slides p.10–12: Grid (macro) + Flexbox (micro).
-   CSS Grid: repeat(auto-fit, minmax(250px, 1fr))  ← slide p.11
+   Grid (macro) + Flexbox (micro).
+   CSS Grid: repeat(auto-fit, minmax(250px, 1fr))
    Developer: These extend the .grid--* classes from P1.
    ============================================================ */
 
@@ -2409,7 +2409,7 @@ img {
   gap: var(--gutter);
 }
 
-/* Sidebar layout (P2 slide p.12: Grid house + Flexbox furniture) */
+/* Sidebar layout (Grid house + Flexbox furniture) */
 .layout-sidebar {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -2457,31 +2457,31 @@ img {
 }
 
 /* ── Responsive stats bar ── */
-.stats-bar__value {
+.stats-bar-value {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 /* ── Responsive hero stats ── */
-.hero__stat-value {
+.hero-stat-value {
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 /* ── Responsive process step numbers ── */
-.process-step__number {
+.process-step-number {
   width: clamp(56px, 8vw, 72px);
   height: clamp(56px, 8vw, 72px);
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 /* ── Responsive hero card ── */
-.hero__card-main,
-.hero__card-bg {
+.hero-card-main,
+.hero-card-bg {
   width: clamp(260px, 60vw, 380px);
   height: clamp(260px, 60vw, 380px);
 }
 
 /* ── Responsive pricing price ── */
-.pricing-card__price {
+.pricing-card-price {
   font-size: clamp(2rem, 5vw, 3rem);
 }
 
@@ -2499,32 +2499,32 @@ img {
 
 /* ── Accessible buttons — minimum touch target ── */
 .btn {
-  min-height: var(--touch-target); /* 44px minimum (P2 slide p.15) */
+  min-height: var(--touch-target); /* 44px minimum */
   min-width: var(--touch-target);
 }
 
 /* ── Responsive nav logo ── */
-.nav__logo {
+.nav-logo {
   font-size: clamp(1rem, 3vw, 1.35rem);
 }
 
 /* ── Responsive footer ── */
-.footer__brand-logo {
+.footer-brand-logo {
   font-size: clamp(1.125rem, 3vw, 1.5rem);
 }
 
 /* ── Responsive section header ── */
-.section__header {
+.section-header {
   margin-bottom: clamp(32px, 6vw, 60px);
 }
 
 /* ── Responsive hero actions ── */
-.hero__actions {
+.hero-actions {
   gap: clamp(10px, 2vw, 16px);
 }
 
 /* ── Responsive hero stats gap ── */
-.hero__stats {
+.hero-stats {
   gap: clamp(24px, 4vw, 40px);
   padding-top: clamp(24px, 4vw, 40px);
   margin-top: clamp(32px, 5vw, 56px);
@@ -2535,13 +2535,13 @@ img {
   height: clamp(280px, 50vw, 500px);
 }
 
-.about-visual__main {
+.about-visual-main {
   height: clamp(240px, 45vw, 400px);
   font-size: clamp(3rem, 8vw, 5rem);
 }
 
 /* ── Responsive team card avatar ── */
-.team-card__avatar {
+.team-card-avatar {
   width: clamp(60px, 10vw, 80px);
   height: clamp(60px, 10vw, 80px);
   font-size: clamp(1.125rem, 3vw, 1.5rem);
@@ -2549,20 +2549,20 @@ img {
 
 /* ============================================================
    SECTION 7 — BREAKPOINT: 0px → 480px (Mobile Core — Base)
-   Project 2 slide p.8: Mobile Core = Base CSS (no query needed)
+  Mobile Core = Base CSS (no query needed)
    Developer: This is the default state. Everything below
    is progressively enhanced with min-width queries.
    ============================================================ */
 
 /* Mobile-first defaults (no media query — always applied) */
 
-.nav__links {
+.nav-links {
   display: none;
 } /* hidden until ≥768px */
-.nav__cta {
+.nav-cta {
   display: none;
 } /* hidden until ≥768px */
-.nav__hamburger {
+.nav-hamburger {
   display: flex;
 } /* visible until ≥768px */
 
@@ -2575,49 +2575,49 @@ img {
 }
 
 /* Stack hero on mobile */
-.hero__content {
+.hero-content {
   grid-template-columns: 1fr;
   gap: clamp(40px, 8vw, 60px);
   padding-inline: var(--container-pad);
 }
 
 /* Hero visual hidden on very small mobile */
-.hero__visual {
+.hero-visual {
   display: none;
 }
 
 /* Hero text full width */
-.hero__text {
+.hero-text {
   max-width: 100%;
 }
 
 /* Hero stats stack */
-.hero__stats {
+.hero-stats {
   flex-direction: column;
   gap: 20px;
 }
 
 /* Hero actions stack */
-.hero__actions {
+.hero-actions {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
 }
 
 /* Hero actions full-width buttons on mobile */
-.hero__actions .btn {
+.hero-actions .btn {
   width: 100%;
   justify-content: center;
 }
 
 /* Footer: single column */
-.footer__grid {
+.footer-grid {
   grid-template-columns: 1fr;
   gap: 32px;
 }
 
 /* Footer bottom: stack */
-.footer__bottom {
+.footer-bottom {
   flex-direction: column;
   gap: 10px;
   text-align: center;
@@ -2662,12 +2662,12 @@ img {
 }
 
 /* Floating badges: hidden on mobile */
-.hero__floating-badge {
+.hero-floating-badge {
   display: none;
 }
 
 /* Pricing cards full width */
-.pricing-card--popular .pricing-card__badge {
+.pricing-card--popular .pricing-card-badge {
   white-space: normal;
   text-align: center;
 }
@@ -2679,7 +2679,7 @@ img {
 }
 
 /* Blog featured card: stack */
-.blog-featured__inner {
+.blog-featured-inner {
   grid-template-columns: 1fr;
   gap: 32px;
 }
@@ -2697,7 +2697,7 @@ img {
 
 /* ============================================================
    SECTION 8 — BREAKPOINT: min-width 480px (Small Mobile+)
-   Project 2 slide p.9: 480px breakpoint
+  480px breakpoint
    Developer: Small phone landscape / large phone adjustments
    ============================================================ */
 
@@ -2713,18 +2713,18 @@ img {
   }
 
   /* Hero actions: row again at 480px+ */
-  .hero__actions {
+  .hero-actions {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
   }
 
-  .hero__actions .btn {
+  .hero-actions .btn {
     width: auto;
   }
 
   /* Hero stats: row at 480px+ */
-  .hero__stats {
+  .hero-stats {
     flex-direction: row;
     gap: 32px;
   }
@@ -2742,19 +2742,19 @@ img {
 
 /* ============================================================
    SECTION 9 — BREAKPOINT: min-width 768px (Tablet+)
-   Project 2 slide p.8: Tablet = Layout Enhancements
+  Tablet = Layout Enhancements
    Developer: Two-column layouts emerge, nav becomes visible
    ============================================================ */
 
 @media (min-width: 768px) {
   /* ── Reset mobile-first nav ── */
-  .nav__links {
+  .nav-links {
     display: flex;
   }
-  .nav__cta {
+  .nav-cta {
     display: inline-flex;
   }
-  .nav__hamburger {
+  .nav-hamburger {
     display: none;
   }
 
@@ -2764,18 +2764,18 @@ img {
   }
 
   /* ── Hero: show visual column ── */
-  .hero__visual {
+  .hero-visual {
     display: flex;
   }
-  .hero__content {
+  .hero-content {
     grid-template-columns: 1fr 1fr;
   }
-  .hero__text {
+  .hero-text {
     max-width: 540px;
   }
 
   /* ── Show floating badges ── */
-  .hero__floating-badge {
+  .hero-floating-badge {
     display: flex;
   }
 
@@ -2808,13 +2808,13 @@ img {
   }
 
   /* ── Footer: 2-col on tablet ── */
-  .footer__grid {
+  .footer-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 
   /* ── Footer bottom: row ── */
-  .footer__bottom {
+  .footer-bottom {
     flex-direction: row;
     text-align: left;
   }
@@ -2836,7 +2836,7 @@ img {
   }
 
   /* ── Blog featured inner: 2-col ── */
-  .blog-featured__inner {
+  .blog-featured-inner {
     grid-template-columns: 1fr 1fr;
     gap: 48px;
   }
@@ -2857,19 +2857,19 @@ img {
   }
 
   /* ── Section label + header ── */
-  .section__header--center .section__label {
+  .section-header--center .section-label {
     justify-content: center;
   }
 
   /* ── Popover: hidden on tablet+ (nav links show) ── */
-  .nav__popover {
+  .nav-popover {
     display: none !important;
   }
 }
 
 /* ============================================================
    SECTION 10 — BREAKPOINT: min-width 1024px (Desktop+)
-   Project 2 slide p.8: Desktop = High-Res Assets
+   Desktop = High-Res Assets
    Developer: Full multi-column layouts
    ============================================================ */
 
@@ -2909,18 +2909,18 @@ img {
   }
 
   /* ── Footer: full 4-col ── */
-  .footer__grid {
+  .footer-grid {
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 48px;
   }
 
   /* ── Hero content: 2 equal cols ── */
-  .hero__content {
+  .hero-content {
     grid-template-columns: 1fr 1fr;
   }
 
   /* ── Hero floating badges ── */
-  .hero__floating-badge {
+  .hero-floating-badge {
     display: flex;
   }
 }
@@ -2950,7 +2950,7 @@ img {
 /* ============================================================
    SECTION 12 — POPOVER NAV: DISPLAY CONTROL
    Developer: The popover is only active on mobile (< 768px).
-   At ≥768px the normal .nav__links are shown.
+   At ≥768px the normal .nav-links are shown.
    The @media block above hides the popover at 768px+.
    ============================================================ */
 
@@ -2959,7 +2959,7 @@ img {
   [popovertarget] {
     display: none;
   }
-  .nav__popover {
+  .nav-popover {
     display: none !important;
   }
 }
@@ -2973,7 +2973,7 @@ img {
 
 /* ============================================================
    SECTION 13 — ACCESSIBILITY ENHANCEMENTS
-   Project 2 slide p.16: WCAG Compliance
+  WCAG Compliance
    Developer: Focus styles, zoom safety, skip links
    ============================================================ */
 
@@ -3011,25 +3011,25 @@ button,
 input[type="submit"],
 input[type="button"],
 .btn,
-.nav__link,
-.nav__drawer-link,
-.footer__link,
-.footer__social-link,
-.blog-card__read-more,
-.card__tag {
+.nav-link,
+.nav-drawer-link,
+.footer-link,
+.footer-social-link,
+.blog-card-read-more,
+.card-tag {
   min-height: var(--touch-target);
   display: inline-flex;
   align-items: center;
 }
 
 /* Nav links: fix height */
-.nav__link {
+.nav-link {
   min-height: var(--touch-target);
   padding-block: 4px;
 }
 
 /* Footer links exception — inline in list */
-.footer__link {
+.footer-link {
   min-height: auto;
   display: block;
 }
@@ -3049,7 +3049,7 @@ input[type="button"],
 /* ── High contrast mode support ── */
 @media (forced-colors: active) {
   .btn--primary,
-  .nav__cta {
+  .nav-cta {
     border: 2px solid ButtonText;
   }
   .card,
@@ -3067,11 +3067,11 @@ input[type="button"],
 
 @media print {
   .nav,
-  .nav__popover,
-  .hero__bg-grid,
-  .hero__glow,
-  .hero__floating-badge,
-  .page-hero__bg,
+  .nav-popover,
+  .hero-bg-grid,
+  .hero-glow,
+  .hero-floating-badge,
+  .page-hero-bg,
   .cta-banner::before,
   body::before {
     display: none !important;
