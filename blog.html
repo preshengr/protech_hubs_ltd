@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog & Insights — Protech Hubs | IT Consultation Abuja</title>
+    <meta
+      name="description"
+      content="Expert IT insights, cloud computing trends, cybersecurity updates, and digital transformation advice from the Protech Hubs team."
+    />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Protech Hubs home">
+          <span class="nav__logo-mark" aria-hidden="true">PH</span>
+          Protech Hubs
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li>
+            <a
+              href="blog.html"
+              class="nav__link nav__link--active"
+              aria-current="page"
+              >Blog</a
+            >
+          </li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav__cta">Get a Free Consultation</a>
+        <button
+          class="nav__hamburger"
+          popovertarget="mobile-nav"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="nav__hamburger-line" aria-hidden="true"></span>
+          <span class="nav__hamburger-line" aria-hidden="true"></span>
+          <span class="nav__hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobile-nav"
+      class="nav__popover"
+      popover
+      role="dialog"
+      aria-label="Mobile navigation"
+    >
+      <div class="nav__drawer">
+        <div class="nav__drawer-header">
+          <span class="nav__drawer-logo"
+            ><span class="nav__logo-mark" aria-hidden="true">PH</span> Protech
+            Hubs</span
+          >
+          <button
+            class="nav__drawer-close"
+            popovertarget="mobile-nav"
+            popovertargetaction="hide"
+            aria-label="Close navigation menu"
+          >
+            ✕
+          </button>
+        </div>
+        <nav class="nav__drawer-links" aria-label="Mobile navigation links">
+          <a href="index.html" class="nav__drawer-link">🏠 Home</a>
+          <a href="about.html" class="nav__drawer-link">👥 About</a>
+          <a href="services.html" class="nav__drawer-link">⚙️ Services</a>
+          <a
+            href="blog.html"
+            class="nav__drawer-link nav__drawer-link--active"
+            aria-current="page"
+            >📝 Blog</a
+          >
+          <a href="contact.html" class="nav__drawer-link">📞 Contact</a>
+        </nav>
+        <div class="nav__drawer-footer">
+          <a href="contact.html" class="nav__drawer-cta"
+            >Get a Free Consultation</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="page-wrapper">
+      <main id="main-content">
+        <section class="page-hero" aria-labelledby="blog-hero-heading">
+          <div class="page-hero__bg" aria-hidden="true"></div>
+          <div class="container">
+            <div class="page-hero__content">
+              <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="page-hero__breadcrumb-sep" aria-hidden="true"
+                  >/</span
+                >
+                <span aria-current="page">Blog & Insights</span>
+              </nav>
+              <h1 class="page-hero__title" id="blog-hero-heading">
+                IT Insights & Trends
+              </h1>
+              <p class="page-hero__subtitle">
+                Practical knowledge, expert opinions, and industry intelligence
+                to help Nigerian businesses navigate the technology landscape.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURED ARTICLE -->
+        <section class="section" aria-labelledby="featured-heading">
+          <div class="container">
+            <div class="section__header">
+              <span class="section__label" aria-hidden="true">Featured</span>
+              <h2 class="section__title" id="featured-heading">
+                Editor's Pick
+              </h2>
+            </div>
+            <article
+              class="card card--featured"
+              aria-labelledby="featured-article-title"
+            >
+              <!-- blog-featured__inner uses responsive grid -->
+              <div
+                class="blog-featured__inner"
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  gap: clamp(24px, 5vw, 48px);
+                  align-items: center;
+                "
+              >
+                <div>
+                  <div class="blog-card__meta" style="margin-bottom: 16px">
+                    <span class="blog-card__category">Cloud Strategy</span>
+                    <time class="blog-card__date" datetime="2025-05-15"
+                      >May 15, 2025</time
+                    >
+                  </div>
+                  <h3
+                    class="section__title"
+                    id="featured-article-title"
+                    style="font-size: var(--fs-2xl)"
+                  >
+                    Why Nigerian Enterprises Must Move to Hybrid Cloud in 2025
+                  </h3>
+                  <p class="section__subtitle" style="margin-top: 16px">
+                    With unreliable grid power and high bandwidth costs, a
+                    hybrid cloud model isn't just a luxury for Nigerian
+                    businesses — it's a survival strategy. Here's why the
+                    smartest CIOs are making the move now.
+                  </p>
+                  <div
+                    style="
+                      margin-top: clamp(20px, 4vw, 32px);
+                      display: flex;
+                      gap: 16px;
+                      align-items: center;
+                      flex-wrap: wrap;
+                    "
+                  >
+                    <a href="#" class="btn btn--primary">Read Full Article</a>
+                    <span class="text-muted" style="font-size: var(--fs-xs)"
+                      >8 min read</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="blog-card__image"
+                  style="height: clamp(200px, 30vw, 280px); border-radius: 12px"
+                  aria-hidden="true"
+                >
+                  ☁️
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- BLOG GRID -->
+        <section class="section section--alt" aria-labelledby="latest-heading">
+          <div class="container">
+            <div class="section__header">
+              <span class="section__label" aria-hidden="true"
+                >Latest Articles</span
+              >
+              <h2 class="section__title" id="latest-heading">
+                From the Protech Hubs Team
+              </h2>
+            </div>
+
+            <div class="grid grid--3 mt-60">
+              <article class="blog-card" aria-labelledby="post-1-title">
+                <div class="blog-card__image" aria-hidden="true">🔐</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">Cybersecurity</span>
+                    <time class="blog-card__date" datetime="2025-05-10"
+                      >May 10, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-1-title">
+                    NDPR Compliance in 2025: What Every Nigerian Business Must
+                    Know
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    The Nigeria Data Protection Regulation has teeth — and
+                    enforcement is increasing. Here's a practical compliance
+                    checklist for SMEs and enterprises alike.
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about NDPR Compliance"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+
+              <article class="blog-card" aria-labelledby="post-2-title">
+                <div class="blog-card__image" aria-hidden="true">📡</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">Networking</span>
+                    <time class="blog-card__date" datetime="2025-04-28"
+                      >Apr 28, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-2-title">
+                    SD-WAN vs MPLS: Which is Right for Multi-Site Nigerian
+                    Businesses?
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    As branch office networking evolves, the MPLS vs SD-WAN
+                    debate intensifies. We break down the cost, performance, and
+                    reliability trade-offs for Nigerian conditions.
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about SD-WAN vs MPLS"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+
+              <article class="blog-card" aria-labelledby="post-3-title">
+                <div class="blog-card__image" aria-hidden="true">🤖</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">AI & Automation</span>
+                    <time class="blog-card__date" datetime="2025-04-19"
+                      >Apr 19, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-3-title">
+                    How AI is Reshaping IT Operations in African Enterprises
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    From AIOps to intelligent automation, artificial
+                    intelligence is transforming how IT departments operate.
+                    Here's what forward-thinking African businesses are doing
+                    right now.
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about AI in IT operations"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+
+              <article class="blog-card" aria-labelledby="post-4-title">
+                <div class="blog-card__image" aria-hidden="true">💰</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">Cloud Cost</span>
+                    <time class="blog-card__date" datetime="2025-04-05"
+                      >Apr 5, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-4-title">
+                    5 Cloud Cost Leaks That Are Draining Your IT Budget Right
+                    Now
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    Over-provisioned instances, zombie resources, and data
+                    egress fees silently inflate your cloud bill. Learn how to
+                    reclaim up to 35% of your cloud spend.
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about cloud cost leaks"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+
+              <article class="blog-card" aria-labelledby="post-5-title">
+                <div class="blog-card__image" aria-hidden="true">🏗️</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">Infrastructure</span>
+                    <time class="blog-card__date" datetime="2025-03-22"
+                      >Mar 22, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-5-title">
+                    Building a Resilient Data Centre Strategy for Nigeria's
+                    Power Reality
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    Inconsistent grid power isn't going away. Discover how smart
+                    infrastructure design keeps your business running
+                    regardless.
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about data centre resilience"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+
+              <article class="blog-card" aria-labelledby="post-6-title">
+                <div class="blog-card__image" aria-hidden="true">📊</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">Data & Analytics</span>
+                    <time class="blog-card__date" datetime="2025-03-10"
+                      >Mar 10, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-6-title">
+                    From Spreadsheets to Power BI: A Nigerian SME's Journey to
+                    Data Intelligence
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    A real-world case study of how a Lagos-based logistics firm
+                    transformed their reporting from manual spreadsheets to a
+                    live Power BI dashboard — in just 8 weeks.
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about Power BI transformation"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+
+              <article class="blog-card" aria-labelledby="post-7-title">
+                <div class="blog-card__image" aria-hidden="true">🛡️</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">Cybersecurity</span>
+                    <time class="blog-card__date" datetime="2025-02-28"
+                      >Feb 28, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-7-title">
+                    Ransomware in Nigeria: The Threat is Real and Growing
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    Nigerian organisations lost billions to ransomware attacks
+                    in 2024. Is your backup strategy, endpoint protection, and
+                    incident response plan ready for the next wave?
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about ransomware threats"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+
+              <article class="blog-card" aria-labelledby="post-8-title">
+                <div class="blog-card__image" aria-hidden="true">🔄</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category"
+                      >Digital Transformation</span
+                    >
+                    <time class="blog-card__date" datetime="2025-02-14"
+                      >Feb 14, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-8-title">
+                    The 7 Pillars of Digital Transformation for Nigerian
+                    Financial Institutions
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    Banks and fintechs face unique compliance, connectivity, and
+                    customer experience challenges. Here is a framework that
+                    works for Nigeria's financial sector.
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about digital transformation"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+
+              <article class="blog-card" aria-labelledby="post-9-title">
+                <div class="blog-card__image" aria-hidden="true">🌍</div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">IT Strategy</span>
+                    <time class="blog-card__date" datetime="2025-01-30"
+                      >Jan 30, 2025</time
+                    >
+                  </div>
+                  <h3 class="blog-card__title" id="post-9-title">
+                    IT Governance 101: Why Nigerian CEOs Need to Own the
+                    Technology Agenda
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    Technology decisions are business decisions. Learn why
+                    effective IT governance — not just having an IT department —
+                    is the differentiator for high-performing Nigerian
+                    companies.
+                  </p>
+                  <a
+                    href="#"
+                    class="blog-card__read-more"
+                    aria-label="Read more about IT governance"
+                    >Read More →</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <!-- Pagination -->
+            <nav
+              class="flex flex-center mt-60"
+              style="gap: 8px"
+              aria-label="Blog pagination"
+            >
+              <a
+                href="#"
+                class="btn btn--ghost"
+                style="padding: 10px 18px; min-width: 44px"
+                aria-label="Previous page"
+                >‹</a
+              >
+              <a
+                href="#"
+                class="btn btn--primary"
+                style="padding: 10px 18px; min-width: 44px"
+                aria-label="Page 1, current"
+                aria-current="page"
+                >1</a
+              >
+              <a
+                href="#"
+                class="btn btn--ghost"
+                style="padding: 10px 18px; min-width: 44px"
+                aria-label="Page 2"
+                >2</a
+              >
+              <a
+                href="#"
+                class="btn btn--ghost"
+                style="padding: 10px 18px; min-width: 44px"
+                aria-label="Page 3"
+                >3</a
+              >
+              <a
+                href="#"
+                class="btn btn--ghost"
+                style="padding: 10px 18px; min-width: 44px"
+                aria-label="Next page"
+                >›</a
+              >
+            </nav>
+          </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="section" aria-labelledby="newsletter-heading">
+          <div class="container">
+            <div class="cta-banner">
+              <h2 class="cta-banner__title" id="newsletter-heading">
+                Stay Ahead of the Tech Curve
+              </h2>
+              <p class="cta-banner__text">
+                Get the latest IT insights, security alerts, and digital
+                transformation strategies delivered to your inbox every two
+                weeks — free.
+              </p>
+              <div style="max-width: 480px; margin: 0 auto; width: 100%">
+                <div
+                  style="display: flex; gap: 8px; width: 100%; flex-wrap: wrap"
+                >
+                  <label for="newsletter-email" class="sr-only"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    id="newsletter-email"
+                    class="form-input"
+                    placeholder="Enter your work email address"
+                    style="flex: 1; min-width: 200px"
+                  />
+                  <button
+                    class="btn btn--primary"
+                    type="button"
+                    style="white-space: nowrap"
+                  >
+                    Subscribe Free
+                  </button>
+                </div>
+                <p
+                  class="text-muted"
+                  style="
+                    font-size: var(--fs-xs);
+                    text-align: center;
+                    margin-top: 12px;
+                  "
+                >
+                  No spam. Unsubscribe anytime. Read by 2,000+ Nigerian IT
+                  professionals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" role="contentinfo">
+        <div class="container">
+          <div class="footer__grid">
+            <div>
+              <div class="footer__brand-logo">
+                <span class="nav__logo-mark" aria-hidden="true">PH</span>
+                Protech Hubs
+              </div>
+              <div class="footer__accent-bar" aria-hidden="true"></div>
+              <p class="footer__brand-tagline">
+                Empowering Nigerian businesses with world-class IT consultation,
+                cloud solutions, and cybersecurity services since 2018.
+              </p>
+              <div class="footer__socials" aria-label="Social media">
+                <a href="#" class="footer__social-link" aria-label="LinkedIn"
+                  >in</a
+                >
+                <a href="#" class="footer__social-link" aria-label="Twitter / X"
+                  >𝕏</a
+                >
+                <a href="#" class="footer__social-link" aria-label="Facebook"
+                  >f</a
+                >
+                <a href="#" class="footer__social-link" aria-label="Instagram"
+                  >◎</a
+                >
+              </div>
+            </div>
+            <nav aria-label="Company links">
+              <h3 class="footer__col-title">Company</h3>
+              <ul class="footer__links" role="list">
+                <li><a href="about.html" class="footer__link">About Us</a></li>
+                <li>
+                  <a href="services.html" class="footer__link">Services</a>
+                </li>
+                <li><a href="blog.html" class="footer__link">Blog</a></li>
+                <li><a href="contact.html" class="footer__link">Contact</a></li>
+                <li><a href="#" class="footer__link">Careers</a></li>
+              </ul>
+            </nav>
+            <nav aria-label="Services links">
+              <h3 class="footer__col-title">Services</h3>
+              <ul class="footer__links" role="list">
+                <li>
+                  <a href="services.html" class="footer__link"
+                    >Cloud Solutions</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html" class="footer__link">Cybersecurity</a>
+                </li>
+                <li>
+                  <a href="services.html" class="footer__link">IT Consulting</a>
+                </li>
+                <li>
+                  <a href="services.html" class="footer__link"
+                    >Network Design</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html" class="footer__link"
+                    >Data Analytics</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <address>
+              <h3 class="footer__col-title">Contact Us</h3>
+              <div class="footer__contact-item">
+                <span class="footer__contact-icon" aria-hidden="true">📞</span
+                ><a href="tel:+2348098093596">+234 809 809 3596</a>
+              </div>
+              <div class="footer__contact-item">
+                <span class="footer__contact-icon" aria-hidden="true">✉️</span
+                ><a href="mailto:info@protechhub.io">info@protechhub.io</a>
+              </div>
+              <div class="footer__contact-item">
+                <span class="footer__contact-icon" aria-hidden="true">📍</span
+                ><span>Suite 234 Wuse Street,<br />FCT, Abuja Nigeria</span>
+              </div>
+            </address>
+          </div>
+          <div class="footer__bottom">
+            <span>© 2025 Protech Hubs. All rights reserved.</span>
+            <span>Built with precision in Abuja, Nigeria 🇳🇬</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
